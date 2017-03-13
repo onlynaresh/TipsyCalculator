@@ -14,6 +14,8 @@
 		4D126D551E68910800B1A886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D126D531E68910800B1A886 /* LaunchScreen.storyboard */; };
 		4D126D601E68910800B1A886 /* tipsy_calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D126D5F1E68910800B1A886 /* tipsy_calculatorTests.swift */; };
 		4D126D6B1E68910800B1A886 /* tipsy_calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D126D6A1E68910800B1A886 /* tipsy_calculatorUITests.swift */; };
+		4DBB501B1E7707E1009F7E8B /* SettingsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBB501A1E7707E1009F7E8B /* SettingsHelper.swift */; };
+		4DBB501F1E773B0C009F7E8B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBB501E1E773B0C009F7E8B /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		4D126D661E68910800B1A886 /* tipsy calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tipsy calculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D126D6A1E68910800B1A886 /* tipsy_calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsy_calculatorUITests.swift; sourceTree = "<group>"; };
 		4D126D6C1E68910800B1A886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DBB501A1E7707E1009F7E8B /* SettingsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsHelper.swift; sourceTree = "<group>"; };
+		4DBB501E1E773B0C009F7E8B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				4D126D511E68910800B1A886 /* Assets.xcassets */,
 				4D126D531E68910800B1A886 /* LaunchScreen.storyboard */,
 				4D126D561E68910800B1A886 /* Info.plist */,
+				4DBB501A1E7707E1009F7E8B /* SettingsHelper.swift */,
+				4DBB501E1E773B0C009F7E8B /* SettingsViewController.swift */,
 			);
 			path = "tipsy calculator";
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DBB501B1E7707E1009F7E8B /* SettingsHelper.swift in Sources */,
 				4D126D4D1E68910800B1A886 /* ViewController.swift in Sources */,
 				4D126D4B1E68910800B1A886 /* AppDelegate.swift in Sources */,
+				4DBB501F1E773B0C009F7E8B /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +511,7 @@
 				4D126D711E68910800B1A886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D126D721E68910800B1A886 /* Build configuration list for PBXNativeTarget "tipsy calculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +520,7 @@
 				4D126D741E68910800B1A886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D126D751E68910800B1A886 /* Build configuration list for PBXNativeTarget "tipsy calculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +529,7 @@
 				4D126D771E68910800B1A886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
