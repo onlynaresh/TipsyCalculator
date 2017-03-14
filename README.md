@@ -18,7 +18,7 @@ Features Implemented:
   2)Make sure the keyboard is always visible and the bill amount is always the first responder<br>
   3)Remember the bill amount across app restarts. After an extended period of time, clear the state
    
-   
+   ![alt tag](TipsyCalc.gif)
 
 References:
 
