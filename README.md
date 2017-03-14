@@ -2,7 +2,7 @@
 
 Demo of tip calculator for CodePath Bootcamp.
 
-Time spent: 20 hours
+Time spent: 24 hours
 
 Features Implemented:
 
