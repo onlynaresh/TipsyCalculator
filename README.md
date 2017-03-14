@@ -18,7 +18,10 @@ Features Implemented:
   2)Make sure the keyboard is always visible and the bill amount is always the first responder<br>
   3)Remember the bill amount across app restarts. After an extended period of time, clear the state
    
-   
-   +![Video Walkthrough](TipsyCalc.gif)
 
+References:
+
+1)https://www.youtube.com/watch?v=lyR8w6zmxVc
+2)https://github.com/nathanshayefar/CodePath-iOS-Project-0-Tip-Calculator
+3)https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/
 
