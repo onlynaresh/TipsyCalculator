@@ -58,7 +58,7 @@ class ViewController: UIViewController {
             let screenBounds = UIScreen.main.bounds
             let screenWidth = screenBounds.size.width
             if(screenWidth > bounds.size.width){
-            self.tipControl.bounds = CGRect(x: bounds.origin.x - 20, y: bounds.origin.y, width: bounds.size.width + 40, height: bounds.size.height)
+            self.tipControl.bounds = CGRect(x: bounds.origin.x - 20, y: bounds.origin.y, width: bounds.size.width + 25, height: bounds.size.height)
             }
      
         }, completion: nil)
