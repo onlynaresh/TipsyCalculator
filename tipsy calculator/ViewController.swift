@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var firstView: UIView!
     @IBOutlet weak var billValue: UITextField!
     
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,14 +33,23 @@ class ViewController: UIViewController {
     
      view.backgroundColor = UIColor.lightGray
     
-       tipControl.selectedSegmentIndex = SettingsHelper.getDefaultTipIndex()
+        tipControl.selectedSegmentIndex = SettingsHelper.getDefaultTipIndex()
         billChange(tipControl)
-     billValue.becomeFirstResponder()
-     totalValue.alpha = 0
-    tipValue.alpha=0
+        billValue.becomeFirstResponder()
+        totalValue.alpha = 0
+        tipValue.alpha=0
     
     
    }
+    
+    func formatCurrency(value: Double) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.maximumFractionDigits = 2;
+        formatter.locale = Locale(identifier: Locale.current.identifier)
+        let result = formatter.string(from: value as NSNumber);
+        return result!;
+    }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -86,10 +96,14 @@ class ViewController: UIViewController {
         let tip = billAmount * tipPercentage
         let total = billAmount + tip
         
-        tipValue.text=String(format:"$%.2f",tip)
+        tipValue.text = formatCurrency(value: tip)
+        totalValue.text=formatCurrency(value: total)
         
-        totalValue.text=String(format:"$%.2f",total)
-         view.backgroundColor = UIColor.green
+       // tipValue.text=String(format:"$%.2f",tip)
+        
+        // totalValue.text=String(format:"$%.2f",total)
+        
+        view.backgroundColor = UIColor.green
         
     }
 
