@@ -23,6 +23,10 @@ Features Implemented:
   1) Added animation to load the fields on home screen one after the other with a set delay.<br>
   2) Changed the background color of home screen whenever the bill change function is invoked.<br>
   3) Changed the dimensions of the tip control as screen loads and cannot go beyond the UIscreen bounds
+
+  Mar 21,2017 -
+
+ 1) Add locale currency.
   
    ![alt tag](TipsyCalc.gif) 
         
