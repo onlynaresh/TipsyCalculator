@@ -2,7 +2,7 @@
 
 Demo of tip calculator for CodePath Bootcamp.
 
-Time spent: 24 hours
+Time spent: 30 hours
 
 Features Implemented:
 
@@ -16,7 +16,14 @@ Features Implemented:
   
   1)Background colors for settings view<br>
   2)Make sure the keyboard is always visible and the bill amount is always the first responder<br>
-  3)Remember the bill amount across app restarts. After an extended period of time, clear the state
+  3)Remember the bill amount across app restarts. After an extended period of time, clear the state<br>
+  
+  Mar 20th,2017 -
+  
+  1) Added animation to load the fields on home screen one after the other with a set delay.<br>
+  2) Changed the background color of home screen whenever the bill change function is invoked.<br>
+  3) Changed the dimensions of the tip control as screen loads and cannot go beyond the UIscreen bounds<br>
+  
    
    ![alt tag](TipsyCalc.gif)
 
