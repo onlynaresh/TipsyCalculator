@@ -30,7 +30,7 @@ Features Implemented:
   
    ![alt tag](TipsyCalc.gif) 
         
-   ![alt tag](https://github.com/onlynaresh/TipsyCalculator/blob/master/TipysCalcV1.1.gif) 
+   ![alt tag](https://github.com/onlynaresh/TipsyCalculator/blob/master/TipsyCalcV1.1.gif) 
 
 References:
 
