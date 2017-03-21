@@ -24,12 +24,10 @@ Features Implemented:
   2) Changed the background color of home screen whenever the bill change function is invoked.<br>
   3) Changed the dimensions of the tip control as screen loads and cannot go beyond the UIscreen bounds
 
-  Mar 21,2017 -
+   Mar 21,2017 -
 
- 1) Add locale currency.
-  
-   ![alt tag](TipsyCalc.gif) 
-        
+  1) Add locale currency.
+      
    ![alt tag](https://github.com/onlynaresh/TipsyCalculator/blob/master/TipsyCalcV1.1.gif) 
 
 References:
