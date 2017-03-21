@@ -24,7 +24,7 @@ Features Implemented:
   2) Changed the background color of home screen whenever the bill change function is invoked.<br>
   3) Changed the dimensions of the tip control as screen loads and cannot go beyond the UIscreen bounds
   
-    ![alt tag](https://github.com/onlynaresh/TipsyCalculator/blob/master/TipsyCalc.gif) 
+   ![alt tag](TipsyCalc.gif) 
         
    ![alt tag](https://github.com/onlynaresh/TipsyCalculator/blob/master/TipysCalcV1.1.gif) 
 
