@@ -35,19 +35,45 @@ class ViewController: UIViewController {
        tipControl.selectedSegmentIndex = SettingsHelper.getDefaultTipIndex()
         billChange(tipControl)
      billValue.becomeFirstResponder()
+     totalValue.alpha = 0
+    tipValue.alpha=0
+    
     
    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        UIView.animate(withDuration: 0.5, delay: 0.0, options: UIViewAnimationOptions.curveEaseOut, animations: {
+            self.billValue.alpha=1
+                   }, completion: nil)
+        
+        UIView.animate(withDuration: 0.5, delay: 0.5, options: .curveEaseOut, animations: {
+          self.tipValue.alpha=1
+        }, completion: nil)
+        
+        UIView.animate(withDuration: 0.5, delay: 0.9, options: .curveEaseOut, animations: {
+            self.totalValue.alpha = 1
+            let bounds = self.tipControl.bounds
+            let screenBounds = UIScreen.main.bounds
+            let screenWidth = screenBounds.size.width
+            if(screenWidth > bounds.size.width){
+            self.tipControl.bounds = CGRect(x: bounds.origin.x - 20, y: bounds.origin.y, width: bounds.size.width + 40, height: bounds.size.height)
+            }
+     
+        }, completion: nil)
+        
+         view.backgroundColor = UIColor.lightGray
+        
     }
+    
  
     @IBAction func segmentedControlChange(_ sender: Any) {
         billChange(tipControl)
     }
  
 
+ 
     @IBAction func billChange(_ sender: AnyObject) {
         
         let billAmountString = billValue.text! as String
@@ -63,6 +89,7 @@ class ViewController: UIViewController {
         tipValue.text=String(format:"$%.2f",tip)
         
         totalValue.text=String(format:"$%.2f",total)
+         view.backgroundColor = UIColor.green
         
     }
 
